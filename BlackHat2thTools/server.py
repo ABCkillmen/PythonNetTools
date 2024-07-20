@@ -22,7 +22,7 @@ def main():
 
         print(f'[*] Accepted connection form {address[0]}:{address[1]}')
         # 创建一个新的线程，让它指向handle_client函数，并传入client变量。
-        client_handler =threading.Thread(target=handle_client(), args=(client,))
+        client_handler = threading.Thread(target=handle_client(), args=(client,))
         # 创建好后，我们启动这个线程来处理刚才收到的连接。
         client_handler.start()
         # 与此同时服务端的主循环也已经准备好处理下一个外来连接。
@@ -30,8 +30,8 @@ def main():
 # handle_client函数会调用recv()接收数据，并给客户端发送一段简单的回复。
 def handle_client(client_socket):
     with client_socket as sock:
-        requests = sock.recv(1024)
-        print(f'[*] Received: {requests.decode("utf-8")}')
+        request = sock.recv(1024)
+        print(f'[*] Received: {request.decode("utf-8")}')
         sock.send(b'ACK')
 
 if __name__ == '__main__':
