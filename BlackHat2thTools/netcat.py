@@ -134,11 +134,11 @@ if __name__ == '__main__':
         formatter_class=argparse.RawDescriptionHelpFormatter,
         # 编写了一段帮助信息，程序启动的时候如果发现--help参数，就会显示这段信息。
         epilog=textwrap.dedent('''Example:
-            netcat.py -t 192.168.152.128 -p 6666 -l -c # command shell
-            netcat.py -t 192.168.152.128 -p 6666 -l -u=mytest.txt # upload to file
-            netcat.py -t 192.168.152.128 -p 6666 -l -e=\"cat /etc/passwd\" # execute command
-            echo 'ABC' | ./netcat.py -t 192.168.152.128 -p 135 # echo text to server port 135
-            netcat.py -t 192.168.152.128 -p 6666 # connect to server
+            netcat.py -t 192.168.1.1 -p 6666 -l -c # command shell
+            netcat.py -t 192.168.1.1 -p 6666 -l -u=mytest.txt # upload to file
+            netcat.py -t 192.168.1.1 -p 6666 -l -e=\"cat /etc/passwd\" # execute command
+            echo 'ABC' | ./netcat.py -t 192.168.1.1 -p 135 # echo text to server port 135
+            netcat.py -t 192.168.1.1 -p 6666 # connect to server
         '''))
     # 添加了6个参数，用来控制程序的行为
     # 使用了-c、-e和-u这三个参数，就意味着要使用-l参数，因为这些行为都只能由接收方来完成。
