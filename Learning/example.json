@@ -1,0 +1,199 @@
+{
+    "10.55.137.211": {
+        "osmatch": {},
+        "ports": [
+            {
+                "protocol": "tcp",
+                "portid": "21",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "ftp",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "22",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "ssh",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "23",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "telnet",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "25",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "smtp",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "80",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "http",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "110",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "pop3",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "139",
+                "state": "open",
+                "reason": "syn-ack",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "netbios-ssn",
+                    "product": "Microsoft Windows netbios-ssn",
+                    "ostype": "Windows",
+                    "method": "probed",
+                    "conf": "10"
+                },
+                "cpe": [
+                    {
+                        "cpe": "cpe:/o:microsoft:windows"
+                    }
+                ],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "443",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "https",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "445",
+                "state": "open",
+                "reason": "syn-ack",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "microsoft-ds",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            },
+            {
+                "protocol": "tcp",
+                "portid": "3389",
+                "state": "closed",
+                "reason": "reset",
+                "reason_ttl": "128",
+                "service": {
+                    "name": "ms-wbt-server",
+                    "method": "table",
+                    "conf": "3"
+                },
+                "cpe": [],
+                "scripts": []
+            }
+        ],
+        "hostname": [],
+        "macaddress": null,
+        "state": {
+            "state": "up",
+            "reason": "localhost-response",
+            "reason_ttl": "0"
+        }
+    },
+    "runtime": {
+        "time": "1732009502",
+        "timestr": "Tue Nov 19 17:45:02 2024",
+        "summary": "Nmap done at Tue Nov 19 17:45:02 2024; 1 IP address (1 host up) scanned in 13.38 seconds",
+        "elapsed": "13.38",
+        "exit": "success"
+    },
+    "stats": {
+        "scanner": "nmap",
+        "args": "D:/EXE/Nmap/nmap.exe -v -oX - --top-ports 10 -sV 10.55.137.211",
+        "start": "1732009489",
+        "startstr": "Tue Nov 19 17:44:49 2024",
+        "version": "7.95",
+        "xmloutputversion": "1.05"
+    },
+    "task_results": [
+        {
+            "task": "Parallel DNS resolution of 1 host.",
+            "time": "1732009496"
+        },
+        {
+            "task": "SYN Stealth Scan",
+            "time": "1732009496",
+            "extrainfo": "10 total ports"
+        },
+        {
+            "task": "Service scan",
+            "time": "1732009502",
+            "extrainfo": "2 services on 1 host"
+        },
+        {
+            "task": "NSE",
+            "time": "1732009502"
+        },
+        {
+            "task": "NSE",
+            "time": "1732009502"
+        }
+    ]
+}
